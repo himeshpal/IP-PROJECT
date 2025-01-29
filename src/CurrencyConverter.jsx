@@ -10,7 +10,7 @@ const CurrencyConverter = () => {
   const [currencies, setCurrencies] = useState([]);
   const [error, setError] = useState(null);
 
-  const API_KEY = "f0c7ef44a9e690e191cc57f1c26893c8";
+  const API_KEY = "97f1ee97af1e2bd9cabffd6bdd900b17";
   const API_URL = `https://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}`;
 
   useEffect(() => {
