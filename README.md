@@ -25,14 +25,12 @@ src/
 ### Installation
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/yourusername/IP-PROJECT.git
 cd IP-PROJECT
 ```
 
 2. Install dependencies:
-
 ```bash
 npm install
 # or
@@ -40,10 +38,9 @@ yarn
 ```
 
 3. Start the development server:
-
 ```bash
 npm run dev
-# or
+# or 
 yarn dev
 ```
 
@@ -65,19 +62,19 @@ The application provides a simple interface to view Reddit content:
 ## Application Screenshots
 
 ### View 1
+<img src="/assets/Output%201.jpeg" alt="Application View 1" width="500" />
 
-![Application View 1](/assets/Output%201.jpeg)
-_Main application interface_
+*Main application interface*
 
 ### View 2
+<img src="/assets/Output%202.jpeg" alt="Application View 2" width="500" />
 
-![Application View 2](/assets/Output%202.jpeg)
-_Alternative view of the Reddit feed_
+*Alternative view of the Reddit feed*
 
 ### View 3
+<img src="/assets/Output%203.jpeg" alt="Application View 3" width="500" />
 
-![Application View 3](/assets/Output%203.jpeg)
-_Mobile-responsive layout_
+*Mobile-responsive layout*
 
 ## Known Issues
 
