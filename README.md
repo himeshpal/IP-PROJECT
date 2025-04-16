@@ -1,85 +1,97 @@
-# React + Vite
+# Reddit Feed Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time Reddit feed viewer built with React and Vite. This application fetches and displays Reddit posts, allowing users to browse content from their favorite subreddits.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# currency
-# Currency Converter
+```
+assets/
+├── Output 1.jpeg        # Screenshot of the application interface
+├── Output 2.jpeg        # Screenshot of the application interface
+├── Output 3.jpeg        # Screenshot of the application interface
+src/
+├── RedditFeedViewer.jsx # Main component for displaying Reddit posts
+├── index.css            # Global styles
+├── main.jsx            # Entry point for the React application
+```
 
-## Overview
+## Getting Started
 
-This is a **React-based Currency Converter** that allows users to convert between different currencies using real-time exchange rates. The application features a modern UI, currency swapping, and error handling for a seamless experience.
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/IP-PROJECT.git
+cd IP-PROJECT
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to the local server (typically http://localhost:5173)
 
 ## Features
 
-- 🔄 **Real-time Currency Conversion**
-- 🔀 **Swap Currencies Instantly**
-- 🎨 **Responsive & Modern UI**
-- ⚡ **Live Exchange Rate Fetching**
-- 🛠 **Error Handling for API Failures**
-
-## Technologies Used
-
-- React.js
-- Tailwind CSS
-- Axios (for API requests)
-- ExchangeRates API
-- Lucide Icons (for UI enhancements)
-
-## Installation & Setup
-
-1. **Clone the Repository:**
-
-   ```sh
-   git clone https://github.com/yourusername/currency-converter.git
-   cd currency-converter
-   ```
-
-2. **Install Dependencies:**
-
-   ```sh
-   npm install
-   ```
-
-3. **Set up API Key:**
-
-   - Create a `.env` file in the root directory.
-   - Add the following line and replace `YOUR_API_KEY` with your actual API key:
-     ```sh
-     VITE_REACT_APP_EXCHANGE_RATES_API_KEY=YOUR_API_KEY
-     ```
-
-4. **Run the Application:**
-
-   ```sh
-   npm run dev
-   ```
+- Fetch and display posts from Reddit
+- Browse posts from different subreddits
+- Responsive design for various screen sizes
 
 ## Usage
 
-- Enter the amount you want to convert.
-- Select the **base currency** and **target currency**.
-- Click the **refresh button** to fetch the latest exchange rates.
-- Use the **swap button** to quickly switch currencies.
+The application provides a simple interface to view Reddit content:
 
-## Screenshots
+1. The main page displays the Reddit feed
+2. You can modify the RedditFeedViewer component to customize which subreddits and content are displayed
 
+## Application Screenshots
 
+### View 1
 
-## Future Enhancements
+![Application View 1](/assets/Output%201.jpeg)
+_Main application interface_
 
-- 🌍 **Multi-language Support**
-- 📊 **Historical Exchange Rate Graphs**
-- 📱 **Mobile-Optimized UI Improvements**
+### View 2
+
+![Application View 2](/assets/Output%202.jpeg)
+_Alternative view of the Reddit feed_
+
+### View 3
+
+![Application View 3](/assets/Output%203.jpeg)
+_Mobile-responsive layout_
+
+## Known Issues
+
+There appears to be an import issue with RedditFeedViewer.jsx not providing a default export. Please ensure that your component exports correctly:
+
+```jsx
+// At the end of RedditFeedViewer.jsx
+export default RedditFeedViewer;
+```
 
 ## Contributing
 
-Pull requests are welcome! If you find a bug or have a feature request, feel free to open an issue.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License.
-
+This project is licensed under the MIT License - see the LICENSE file for details.
