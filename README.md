@@ -76,14 +76,7 @@ The application provides a simple interface to view Reddit content:
 
 *Mobile-responsive layout*
 
-## Known Issues
 
-There appears to be an import issue with RedditFeedViewer.jsx not providing a default export. Please ensure that your component exports correctly:
-
-```jsx
-// At the end of RedditFeedViewer.jsx
-export default RedditFeedViewer;
-```
 
 ## Contributing
 
